@@ -2,6 +2,8 @@ import React, { useState } from 'react';
 import { Link, useNavigate } from 'react-router-dom';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { firebaseAuth } from '../utils/firebaseConfig';
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import satellite from "../Assets/Videos/Satellite.mp4";
 import SignInOptions from '../Components/SignInOptions';
 import '../css/signup.css';
@@ -18,15 +20,16 @@ const SignUp = () => {
     const handleSignUp = async (e) => {
         e.preventDefault();
         if (password !== confirmPassword) {
-            alert('Passwords do not match!');
+            toast.error("Passwords do not match!");
             return;
         }
         try {
             await createUserWithEmailAndPassword(firebaseAuth, email, password);
             navigate('/');
+            handleBackToHome();
         }
         catch (error) {
-            alert('Error signing up: ' + error.message);
+            toast.error("Error Signing Up");
         }
     };
 
@@ -35,7 +38,8 @@ const SignUp = () => {
         if (input.getAttribute('type') === 'password') {
             event.target.classList.add('view');
             input.setAttribute('type', 'text');
-        } else {
+        }
+        else {
             event.target.classList.remove('view');
             input.setAttribute('type', 'password');
         }
@@ -47,7 +51,8 @@ const SignUp = () => {
         if (input.getAttribute('type') === 'password') {
             event.target.classList.add('view');
             input.setAttribute('type', 'text');
-        } else {
+        }
+        else {
             event.target.classList.remove('view');
             input.setAttribute('type', 'password');
         }
@@ -167,6 +172,12 @@ const SignUp = () => {
                     </div>
                 </div>
             </div>
+            <ToastContainer
+                theme="dark"
+                closeOnClick
+                position="top-right"
+                autoClose={5000}
+            />
         </section>
     );
 };

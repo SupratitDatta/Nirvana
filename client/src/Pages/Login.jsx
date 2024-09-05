@@ -19,7 +19,8 @@ const Login = () => {
         if (input.getAttribute('type') === 'password') {
             event.target.classList.add('view');
             input.setAttribute('type', 'text');
-        } else {
+        }
+        else {
             event.target.classList.remove('view');
             input.setAttribute('type', 'password');
         }
@@ -32,7 +33,8 @@ const Login = () => {
             await signInWithEmailAndPassword(firebaseAuth, email, password);
             toast.success("Login successful!");
             navigate("/");
-        } catch (error) {
+        }
+        catch (error) {
             toast.error("Invalid Credentials");
         }
     };

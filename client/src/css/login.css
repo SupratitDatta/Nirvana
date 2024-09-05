@@ -162,13 +162,11 @@
     display: inline-block;
     width: 20px;
     height: 20px;
-    background: url() 0 0 no-repeat;
     transition: 0.5s;
     color: #fff;
 }
 
 .login-form .input .view {
-    background: url() 0 0 no-repeat;
     transition: 0.5s;
 }
 
