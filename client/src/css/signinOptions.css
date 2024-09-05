@@ -1,0 +1,53 @@
+.social-signin-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.divider {
+    width: 100%;
+    border: 0;
+    height: 1px;
+    background: white;
+    margin: 5px auto;
+}
+
+.continue-p {
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: #555;
+}
+
+.social-signin-buttons {
+    display: flex;
+    gap: 2rem;
+    margin-top: 1rem;
+}
+
+.social-signin-btn {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+.social-icon {
+    width: 2rem; 
+    height: auto;
+    transition: 0.2s all ease-in-out;
+}
+
+.social-icon:hover{
+    transform: scale(1.1);
+}
+
+.twitter{
+    transform: scale(1.7);
+}
+
+.twitter:hover{
+    transform: scale(1.9);
+}

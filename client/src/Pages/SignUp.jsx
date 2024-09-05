@@ -3,6 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import { createUserWithEmailAndPassword } from 'firebase/auth';
 import { firebaseAuth } from '../utils/firebaseConfig';
 import satellite from "../Assets/Videos/Satellite.mp4";
+import SignInOptions from '../Components/SignInOptions';
 import '../css/signup.css';
 
 const SignUp = () => {
@@ -162,6 +163,7 @@ const SignUp = () => {
                             <button type="submit" className="btn signup-btn">Sign Up</button>
                         </form>
                         <p>Already Have an Account ? <Link to="/login">Log In</Link></p>
+                        <div><SignInOptions /></div>
                     </div>
                 </div>
             </div>

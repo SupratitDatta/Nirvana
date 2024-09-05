@@ -5,6 +5,7 @@ import { firebaseAuth } from '../utils/firebaseConfig';
 import { toast, ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import satellite from "../Assets/Videos/Satellite.mp4";
+import SignInOptions from '../Components/SignInOptions';
 import '../css/login.css';
 
 const Login = () => {
@@ -115,7 +116,8 @@ const Login = () => {
                             </div>
                         </form>
                         <p>Forgot Password? <a href="#">Click Here</a></p>
-                        <p>Don't have an account? <Link to="/signup">Sign Up</Link></p>
+                        <p className="already">Don't have an account? <Link to="/signup">Sign Up</Link></p>
+                        <div><SignInOptions /></div>
                     </div>
                 </div>
             </div>

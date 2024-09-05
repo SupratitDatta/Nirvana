@@ -95,7 +95,7 @@
 
 .container {
     position: relative;
-    padding: 2rem 2rem 3rem 2rem;
+    padding: 1rem 2rem 1rem 2rem;
     width: 18rem;
     min-height: 60vh;
     display: flex;
@@ -255,6 +255,9 @@
 .signup-form p a {
     color: #5aa0fa;
     text-decoration: none;
+}
+.already{
+    margin-bottom: 1rem;
 }
 
 .signup-form p a:hover {
