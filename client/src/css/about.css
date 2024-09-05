@@ -1,0 +1,24 @@
+.about-data {
+    position: absolute;
+    margin-top: 20vh;
+    margin-left: 6vw;
+    z-index: 1000;
+    color: white;
+    width: 54vw;
+    text-align: justify;
+}
+
+.about-data .about-heading {
+    font-size: 2.3rem;
+    color: white;
+    word-spacing: 0.7rem;
+}
+
+.about-data p {
+    font-size: 1.2rem;
+    word-spacing: 0.5rem;
+    color: grey;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}

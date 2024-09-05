@@ -2,7 +2,7 @@ import React, { useRef } from 'react';
 import * as THREE from 'three';
 import { Canvas, useFrame, extend } from '@react-three/fiber';
 import { OrbitControls, shaderMaterial } from '@react-three/drei';
-import earth from "../Assets/SpherePic/earth2.jpg";
+import earth from "../Assets/SpherePic/Earth.jpg";
 import '../css/sphere.css';
 
 // Vertex and Fragment Shaders for Earth
@@ -155,7 +155,7 @@ const Sphere = () => {
                 <directionalLight position={[5, 5, 5]} />
                 <Earth />
                 <OrbitControls
-                    enableZoom={true}
+                    enableZoom={false}
                     enableRotate={true}
                     enablePan={false}
                 />
