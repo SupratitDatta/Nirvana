@@ -1,11 +1,13 @@
 import React from 'react';
-import Sphere from "../Components/Sphere"
+import Hero from '../Components/Hero';
+import About from '../Components/About';
 import "../css/home.css";
 
 function Home() {
     return (
-        <div>
-            hello
+        <div className="home-container">
+            <Hero />
+            <About />
         </div>
     );
 }

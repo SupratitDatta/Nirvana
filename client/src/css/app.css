@@ -1,16 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400..900&display=swap');
+
+html {
+    scroll-snap-type: y mandatory;
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     padding: 0;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-        'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: "Orbitron", sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
 }
 
-code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
+::-webkit-scrollbar {
+    width: 15px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-
+    
+::-webkit-scrollbar-track {
+    background-color: #202020;
+    border-radius: 0px;
+}
+    
+::-webkit-scrollbar-thumb {
+    background-color: #67beff;
+    border-radius: 5px;
+}
+    
+::-webkit-scrollbar-thumb:hover {
+    background-color: #38a8fc;
 }
