@@ -1,0 +1,202 @@
+:root {
+    --bg-color: #0c0c1d;
+    --text-color: #e0e0ff;
+    --accent-color: #64ffda;
+    --secondary-color: #7b68ee;
+    --tertiary-color: #3a506b;
+}
+
+@keyframes pulse {
+    0% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(100, 255, 218, 0.7);
+    }
+
+    70% {
+        transform: scale(1.05);
+        box-shadow: 0 0 0 10px rgba(100, 255, 218, 0);
+    }
+
+    100% {
+        transform: scale(1);
+        box-shadow: 0 0 0 0 rgba(100, 255, 218, 0);
+    }
+}
+
+@keyframes twinkle {
+    0% {
+        opacity: 0.3;
+    }
+
+    50% {
+        opacity: 0.4;
+    }
+
+    100% {
+        opacity: 0.3;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 10px rgba(100, 255, 218, 0.7);
+    }
+
+    to {
+        text-shadow: 0 0 20px rgba(100, 255, 218, 0.9), 0 0 30px rgba(100, 255, 218, 0.7);
+    }
+}
+
+@keyframes subtleRainbow {
+    0% {
+        background-position: 0% 0%;
+    }
+
+    100% {
+        background-position: 0% 300%;
+    }
+}
+
+.launch-container .launches {
+    overflow-y: auto;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    position: relative;
+}
+
+.launch-container .title2 {
+    font-size: 4.5rem;
+    text-align: center;
+    color: var(--accent-color);
+    padding-top: 5vh;
+    text-shadow: 0 0 10px rgba(100, 255, 218, 0.7);
+    animation: fadeInDown 1s ease-out, glow 2s ease-in-out infinite alternate;
+}
+
+.launch-container .vertical-timeline-element-content {
+    box-shadow: 0 0.25em 0.5em 0 rgba(100, 255, 218, 0.1), 0 0.4em 1.25em 0 rgba(100, 255, 218, 0.05) !important;
+    padding: 2em 3em !important;
+    border-radius: 15px;
+    transition: all 5.3s ease;
+    background: rgba(58, 80, 107, 0.2);
+    backdrop-filter: blur(5px);
+    border: 1px solid rgba(100, 255, 218, 0.1);
+}
+
+.launch-container .vertical-timeline-element-content:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 0.5em 1em 0 rgba(100, 255, 218, 0.2),
+        0 0.8em 2.5em 0 rgba(100, 255, 218, 0.1) !important;
+}
+
+.launch-container .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px var(--secondary-color), inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(100, 255, 218, 0.05) !important;
+}
+
+
+.launch-container .vertical-timeline::before {
+    background: linear-gradient(to bottom,
+            #ff9aa2, #ffb7b2, #ffdac1, #e2f0cb, #b5ead7, #c7ceea);
+    width: 4px;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.3);
+    animation: subtleRainbow 15s linear infinite;
+}
+
+.launch-container .date {
+    color: var(--accent-color);
+    font-weight: bold;
+    text-shadow: 0 0 5px rgba(100, 255, 218, 0.5);
+}
+
+#description {
+    margin: 1.5em 0 2em 0;
+    line-height: 1.6;
+    color: var(--text-color);
+}
+
+.launch-container .button1 {
+    text-decoration: none;
+    padding: 0.75em 1.5em;
+    border-radius: 25px;
+    color: var(--bg-color);
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: all 5.3s ease;
+    box-shadow: 0 4px 6px rgba(100, 255, 218, 0.2);
+}
+
+.launch-container .workButton {
+    background-color: var(--accent-color);
+}
+
+.launch-container .workButton:hover {
+    background-color: #4ad7b9;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(100, 255, 218, 0.4);
+}
+
+.launch-container .schoolButton {
+    background-color: var(--secondary-color);
+}
+
+.launch-container .schoolButton:hover {
+    background-color: #6a5acd;
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(123, 104, 238, 0.4);
+}
+
+
+.launch-container .vertical-timeline-element:hover .vertical-timeline-element-icon {
+    animation: pulse 3.5s infinite;
+}
+
+.launch-container .timeline-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.launch-container .text-content {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.launch-container .image-content {
+    flex: 1;
+    text-align: right;
+}
+
+.launch-container .timeline-image {
+    width: 100%;
+    max-width: 400px;
+    height: auto;
+}
+
+@media only screen and (max-width: 1500px) {
+    .launch-container .vertical-timeline-element-date {
+        display: block !important;
+        float: none !important;
+        color: var(--accent-color);
+        margin-top: 1.5em;
+        font-weight: bold;
+    }
+}
