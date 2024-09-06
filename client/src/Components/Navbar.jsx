@@ -179,7 +179,7 @@ function Navbar() {
                             </li>
                         </ul>
                     </li>
-                    <li><a href="#">CONTACT</a></li>
+                    <li><a href="#contact" onClick={smoothScroll}>CONTACT</a></li>
                 </ul>
                 <div className="nav-icons">
                     {isLoggedIn ? (

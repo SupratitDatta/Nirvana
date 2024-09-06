@@ -1,0 +1,186 @@
+@keyframes twinkle {
+    0% { opacity: 0; transform: translateY(0); }
+    25% { opacity: 1; transform: translateY(-1px); }
+    50% { opacity: 0; transform: translateY(-2px); }
+    75% { opacity: 1; transform: translateY(-1px); }
+    100% { opacity: 0; transform: translateY(0); }
+}
+
+@keyframes shoot {
+    0% { transform: translateX(0) translateY(0) rotate(-45deg); opacity: 1; }
+    100% { transform: translateX(300px) translateY(300px) rotate(-45deg); opacity: 0; }
+}
+
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-20px); }
+    100% { transform: translateY(0px); }
+}
+
+@keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+}
+
+.space-contact {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    font-family: 'Arial', sans-serif;
+    padding: 20px;
+    padding-top: 20vh;
+    box-sizing: border-box;
+    position: relative;
+    overflow: hidden;
+}
+
+.space-contact .contact-container {
+    width: 100%;
+    max-width: 500px;
+    background: rgba(255, 255, 255, 0.05);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 0px 50px 10px 50px;
+    box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+    border: 1px solid rgba(255, 255, 255, 0.18);
+    animation: float 6s ease-in-out infinite;
+}
+
+.space-contact .space-title {
+    font-size: 36px;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 10px;
+    text-shadow: 0 0 10px rgba(255, 255, 255, 0.1);
+    animation: pulse 4s ease-in-out infinite;
+}
+
+.space-contact .space-subtitle {
+    font-size: 18px;
+    color: #b8b8b8;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.space-contact input,
+.space-contact textarea {
+    width: 95%;
+    padding: 12px;
+    margin-bottom: 20px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    border-radius: 8px;
+    color: #fff;
+    font-size: 16px;
+    transition: all 0.3s ease;
+}
+
+.space-contact input:focus,
+.space-contact textarea:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.1);
+    border-color: rgba(255, 255, 255, 0.5);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.1);
+    transform: translateY(-5px);
+}
+
+.space-contact input::placeholder,
+.space-contact textarea::placeholder {
+    color: rgba(255, 255, 255, 0.5);
+}
+
+.space-contact button {
+    width: 100%;
+    padding: 12px;
+    background: linear-gradient(45deg, #00aeff, #a68eff);
+    border: none;
+    border-radius: 8px;
+    color: #fff;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.space-contact button:before {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -50%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.1);
+    transform: rotate(45deg);
+    transition: all 0.3s ease;
+}
+
+.space-contact button:hover:not(:disabled):before {
+    left: -100%;
+    top: -100%;
+}
+
+.space-contact button:hover:not(:disabled) {
+    background: linear-gradient(45deg, #a68eff, #00aeff);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(166, 142, 255, 0.4);
+}
+
+.space-contact button:disabled {
+    background: #4a4a4a;
+    cursor: not-allowed;
+}
+
+.space-contact .stars {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    pointer-events: none;
+    z-index: -1;
+}
+
+.space-contact .star {
+    position: absolute;
+    width: 2px;
+    height: 2px;
+    background: #fff;
+    border-radius: 50%;
+    animation: twinkle var(--duration) infinite;
+    opacity: 0;
+}
+
+.space-contact .star:nth-child(even) {
+    background: #00aeff;
+}
+
+.space-contact .shooting-star {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background: linear-gradient(45deg, #00aeff, #ffffff);
+    border-radius: 50%;
+    filter: drop-shadow(0 0 6px #ffffff);
+    animation: shoot 2s linear infinite;
+    opacity: 0;
+}
+
+
+@media (max-width: 600px) {
+    .space-contact .contact-container {
+        padding: 30px;
+    }
+
+    .space-contact .space-title {
+        font-size: 28px;
+    }
+
+    .space-contact .space-subtitle {
+        font-size: 16px;
+    }
+}
