@@ -1,12 +1,14 @@
 import React from 'react';
 import Navbar from "../Components/Navbar";
 import backVideo from "../Assets/Videos/Spaceship.mp4";
+import SideMenu from "./SideMenu";
 import "../css/hero.css";
 
 function Hero() {
     return (
         <section>
             <div className="hero-container" id="hero">
+                <SideMenu />
                 <Navbar />
                 <video autoPlay muted loop className="background-video">
                     <source src={backVideo} type="video/mp4" />
