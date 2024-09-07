@@ -1,7 +1,7 @@
 .sidemenu-container .hamburger {
     position: fixed;
     z-index: 3;
-    right: 6px;
+    right: 1.5rem;
     margin-top: 1.5rem;
     color: #fff;
     background-color: transparent;

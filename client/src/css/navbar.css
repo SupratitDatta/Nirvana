@@ -37,9 +37,9 @@
 }
 
 .logo .logoPic {
-    height: 2rem;
-    width: 2rem;
-    margin-right: 10px;
+    width: 13rem;
+    height: auto;
+    padding-top: 0.2rem;
     border-radius: 0.5rem;
 }
 
@@ -55,7 +55,7 @@
 
 .navigation-menu li {
     position: relative;
-    margin: 0 20px;
+    margin: 0 15px;
     transition: 0.5s all;
 }
 

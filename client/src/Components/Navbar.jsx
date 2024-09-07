@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { firebaseAuth } from "../utils/firebaseConfig";
 import { signOut } from "firebase/auth";
 import { onAuthStateChanged } from "firebase/auth";
+import Nirvana from "../Assets/Logo/Nirvana.svg";
 import "../css/navbar.css";
 
 function Navbar() {
@@ -49,9 +50,8 @@ function Navbar() {
             <nav className="navbar">
                 <Link to="/home">
                     <div className="logo">
-                        <img className='logoPic' alt="L">
-                        </img>
-                        <h1 className="title">NIRVANA</h1>
+                        <img src={Nirvana} className='logoPic' alt="L"></img>
+                        {/* <h1 className="title">NIRVANA</h1> */}
                     </div>
                 </Link>
                 <ul className="navigation-menu">
