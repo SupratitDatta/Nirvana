@@ -2,17 +2,74 @@ import React from "react";
 import { Link } from "react-router-dom";
 import ShootingStars from "./ShootingStars";
 import "../css/landing.css";
+import StarAnimation from "./StarAnimation";
 
 function Landing() {
     return (
         <div className="landing-container">
-            <ShootingStars />
+            <StarAnimation />
             <div className="text">
                 <p className="subtitle data1">Nirvana is here</p>
                 <h1 className="title">
-                    <div className="data2">
-                        <div>Transforming Shadows</div>
-                        <div>into Clarity</div>
+                    <div className="data2 big">
+                        <div>
+                            <span className="hover-letter">T</span>
+                            <span className="hover-letter">r</span>
+                            <span className="hover-letter">a</span>
+                            <span className="hover-letter">n</span>
+                            <span className="hover-letter">s</span>
+                            <span className="hover-letter">c</span>
+                            <span className="hover-letter">e</span>
+                            <span className="hover-letter">n</span>
+                            <span className="hover-letter">d</span>
+                            <span className="hover-letter">i</span>
+                            <span className="hover-letter">n</span>
+                            <span className="hover-letter">g</span>
+                            <span>&nbsp;</span>
+                            <span className="hover-letter">H</span>
+                            <span className="hover-letter">o</span>
+                            <span className="hover-letter">r</span>
+                            <span className="hover-letter">i</span>
+                            <span className="hover-letter">z</span>
+                            <span className="hover-letter">o</span>
+                            <span className="hover-letter">n</span>
+                            <span className="hover-letter">s</span>,
+                        </div>
+                        <div>
+                            <span className="hover-letter">U</span>
+                            <span className="hover-letter">n</span>
+                            <span className="hover-letter">l</span>
+                            <span className="hover-letter">o</span>
+                            <span className="hover-letter">c</span>
+                            <span className="hover-letter">k</span>
+                            <span className="hover-letter">i</span>
+                            <span className="hover-letter">n</span>
+                            <span className="hover-letter">g</span>
+                            <span>&nbsp;</span>
+                            <span className="hover-letter">t</span>
+                            <span className="hover-letter">h</span>
+                            <span className="hover-letter">e</span>
+                            <span>&nbsp;</span>
+                            <span className="hover-letter">F</span>
+                            <span className="hover-letter">u</span>
+                            <span className="hover-letter">t</span>
+                            <span className="hover-letter">u</span>
+                            <span className="hover-letter">r</span>
+                            <span className="hover-letter">e</span>
+                            <span>&nbsp;</span>
+                            <span className="hover-letter">o</span>
+                            <span className="hover-letter">f</span>
+                            <span>&nbsp;</span>
+                            <span className="hover-letter">S</span>
+                            <span className="hover-letter">p</span>
+                            <span className="hover-letter">a</span>
+                            <span className="hover-letter">c</span>
+                            <span className="hover-letter">e</span>
+                        </div>
+                    </div>
+                    <div className="data2 small">
+                        <div>Transcending Horizons,</div>
+                        <div>Unlocking the Future of Space</div>
                     </div>
                 </h1>
             </div>

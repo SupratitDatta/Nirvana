@@ -68,10 +68,9 @@
     overflow-y: none;
 }
 
-.landing-container .data1,
-.data2 {
+.landing-container .data1, .data2 {
     color: white;
-    word-spacing: 1rem;
+    word-spacing: 0.5rem;
     text-align: center;
 }
 
@@ -80,17 +79,36 @@
     font-size: 2rem;
 }
 
-.landing-container .data2 {
+.landing-container .small{
+    display:none;
+}
+
+.landing-container .big {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-bottom: 10vh;
+}
+
+.landing-container .big div {
+    font-size: 3.5rem;
+    text-align: center;
+    cursor: pointer;
+}
+
+.landing-container .big .hover-letter {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.landing-container .big .hover-letter:hover {
+    transform: scale(1.5);
 }
 
 .landing-container .title {
-    font-size: 60px;
+    font-size: 10vh;
     text-transform: uppercase;
-    white-space: nowrap;
     color: white;
 }
 
@@ -115,7 +133,7 @@
 .landing-container .culture {
     position: fixed;
     top: 75vh;
-    right: 8vw;
+    right: 5vw;
     transform: translateY(-40%);
     background: url("../Assets/Icons/culture.png") no-repeat;
     background-position: center;
@@ -152,9 +170,21 @@
         margin-bottom: 10vh;
     }
 
+    .landing-container .small{
+        display:flex;    
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 10vh;
+    }
+
+    .landing-container .big{
+        display:none;
+    }
+
     .landing-container .data2 {
         font-size: 2.5rem;
-        width: 30%;
+        width: 90%;
         margin-left: auto;
         margin-right: auto;
     }
@@ -168,7 +198,7 @@
         height: 4rem;
         left: 25%;
         font-size: 1.5rem;
-        margin-top: 30vh;
+        margin-top: 25vh;
     }
 
     .landing-container .culture {
@@ -195,7 +225,7 @@
         height: 4rem;
         left: 20%;
         font-size: 1.2rem;
-        margin-top: 20vh;
+        margin-top: 25vh;
     }
 
     .landing-container .culture {
