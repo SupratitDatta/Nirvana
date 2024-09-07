@@ -1,0 +1,204 @@
+@keyframes draw {
+    0% {
+        stroke-dashoffset: 4500;
+    }
+
+    100% {
+        stroke-dashoffset: 0;
+    }
+}
+
+
+/*PreLoader Component Styles*/
+
+.preloader-container {
+    width: 100%;
+    background: #000;
+    color: white;
+    overflow-y: hidden;
+}
+
+.preloader-container .landing {
+    padding: 0px;
+    margin: 0px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+    height: 100vh;
+}
+
+
+/*Intro Component Styles*/
+
+.intro {
+    background: black;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 3;
+}
+
+.intro .nameContainer {
+    height: 40px;
+    margin-top: 30px;
+    overflow: hidden;
+}
+
+.intro .intro-svg {
+    height: 150px;
+    width: 150px;
+    stroke: white;
+    fill-opacity: 0;
+    stroke-width: 3px;
+    stroke-dasharray: 4500;
+    animation: draw 8s ease;
+}
+
+
+/*Landing Component Styles*/
+
+.landing-container {
+    overflow: hidden;
+    overflow-y: none;
+}
+
+.landing-container .data1,
+.data2 {
+    color: white;
+    word-spacing: 1rem;
+    text-align: center;
+}
+
+.landing-container .data1 {
+    margin-top: 15vh;
+    font-size: 2rem;
+}
+
+.landing-container .data2 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.landing-container .title {
+    font-size: 60px;
+    text-transform: uppercase;
+    white-space: nowrap;
+    color: white;
+}
+
+.landing-container .wlcm-btn {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 25rem;
+    left: 40%;
+    width: 20%;
+    height: 5rem;
+    background-color: rgb(255, 255, 255);
+    font-size: 2rem;
+    font-weight: 500;
+    border-radius: 1rem;
+    color: black;
+    cursor: pointer;
+}
+
+.landing-container .culture {
+    position: fixed;
+    top: 75vh;
+    right: 8vw;
+    transform: translateY(-40%);
+    background: url("../Assets/Icons/culture.png") no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 10rem;
+    width: 15rem;
+    z-index: 0;
+}
+
+.landing-container .overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0%;
+    z-index: 2;
+    background: white;
+}
+
+.landing-container .first {
+    top: 0;
+}
+
+.landing-container .second {
+    top: 33.3%;
+}
+
+.landing-container .third {
+    top: 55.6%;
+}
+
+@media only screen and (max-width: 750px) {
+    .landing-container .data1 {
+        font-size: 1.4rem;
+        margin-bottom: 10vh;
+    }
+
+    .landing-container .data2 {
+        font-size: 2.5rem;
+        width: 30%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .landing-container .title {
+        white-space: wrap;
+    }
+
+    .landing-container .wlcm-btn {
+        width: 50%;
+        height: 4rem;
+        left: 25%;
+        font-size: 1.5rem;
+        margin-top: 30vh;
+    }
+
+    .landing-container .culture {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 400px) {
+    .landing-container .data1 {
+        font-size: 1.4rem;
+        margin-bottom: 15vh;
+    }
+
+    .landing-container .data2 {
+        font-size: 2.2rem;
+    }
+
+    .landing-container .title {
+        white-space: wrap;
+    }
+
+    .landing-container .wlcm-btn {
+        width: 60%;
+        height: 4rem;
+        left: 20%;
+        font-size: 1.2rem;
+        margin-top: 20vh;
+    }
+
+    .landing-container .culture {
+        display: none;
+    }
+}

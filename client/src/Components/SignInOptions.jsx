@@ -27,7 +27,7 @@ function SignInOptions() {
                 toast.success("User logged in Successfully", {
                     position: "top-center",
                 });
-                navigate("/");
+                navigate("/home");
             }
         }
         catch (error) {
@@ -50,11 +50,11 @@ function SignInOptions() {
         const provider = new TwitterAuthProvider();
         handleSignIn(provider);
     };
-    
+
     const handleBackToHome = () => {
-        navigate("/");
+        navigate("/home");
     };
-    
+
     return (
         <div className="social-signin-container">
             <hr className="divider" />

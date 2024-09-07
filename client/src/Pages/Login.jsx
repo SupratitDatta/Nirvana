@@ -32,7 +32,7 @@ const Login = () => {
         try {
             await signInWithEmailAndPassword(firebaseAuth, email, password);
             toast.success("Login successful!");
-            navigate("/");
+            navigate("/home");
         }
         catch (error) {
             toast.error("Invalid Credentials");
@@ -42,14 +42,14 @@ const Login = () => {
     useEffect(() => {
         const unsubscribe = onAuthStateChanged(firebaseAuth, (user) => {
             if (user) {
-                navigate("/");
+                navigate("/home");
             }
         });
         return () => unsubscribe();
     }, [navigate]);
 
     const handleBackToHome = () => {
-        navigate("/");
+        navigate("/home");
     };
 
     return (

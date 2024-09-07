@@ -47,7 +47,7 @@ function Navbar() {
     return (
         <div className="navbar-container">
             <nav className="navbar">
-                <Link to="/">
+                <Link to="/home">
                     <div className="logo">
                         <img className='logoPic' alt="L">
                         </img>

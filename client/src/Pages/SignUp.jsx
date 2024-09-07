@@ -25,7 +25,7 @@ const SignUp = () => {
         }
         try {
             await createUserWithEmailAndPassword(firebaseAuth, email, password);
-            navigate('/');
+            navigate('/home');
             handleBackToHome();
         }
         catch (error) {
@@ -60,7 +60,7 @@ const SignUp = () => {
     };
 
     const handleBackToHome = () => {
-        navigate("/");
+        navigate("/home");
     };
 
     return (
