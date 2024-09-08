@@ -14,7 +14,7 @@ function Launches() {
         <div className="launch-container">
             <Navbar />
             <div className="launches">
-                <h1 className="title2">Upcoming Rocket Launches</h1>
+                <h1 className="title2">Upcoming Missions in Focus</h1>
                 <VerticalTimeline>
                     {timelineElements.map((element) => {
                         let isWorkIcon = element.icon === "work";
