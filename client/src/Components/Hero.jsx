@@ -17,7 +17,7 @@ function Hero() {
                 <div className="hero-data">
                     <h3>Upcoming Project</h3>
                     <h1>Mission Uranus</h1>
-                    <Link to="/Launches">
+                    <Link to="/image-processing">
                         <button class="custom-btn btn-14">LAUNCH</button>
                     </Link>
                 </div>

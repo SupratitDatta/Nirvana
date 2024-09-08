@@ -6,6 +6,7 @@ import SignUp from "./Pages/SignUp";
 import Launches from './Pages/Launches';
 import Profile from './Pages/Profile';
 import './css/app.css';
+import ImageProcessing from './Pages/ImageProcessing';
 
 function App() {
     return (
@@ -18,6 +19,7 @@ function App() {
                     <Route path="/login" element={<Login />} />
                     <Route path="/signup" element={<SignUp />} />
                     <Route path="/profile" element={<Profile />} />
+                    <Route path="/image-processing" element={<ImageProcessing />} />
                 </Routes>
             </div>
         </Router>

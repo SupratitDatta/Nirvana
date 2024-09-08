@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Processing Results</title>
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Image Processing Results</h1>
+        
+        <div class="image-container">
+            <h3>Original Image</h3>
+            <img src="/uploads/{{ original_image }}" alt="Original Image">
+        </div>
+
+        <div class="image-container">
+            <h3>Calibrated Image</h3>
+            <img src="/processed/{{ calibrated_image }}" alt="Calibrated Image">
+        </div>
+
+        <div class="image-container">
+            <h3>Filtered Image</h3>
+            <img src="/processed/{{ filtered_image }}" alt="Filtered Image">
+        </div>
+
+        <div class="image-container">
+            <h3>CLAHE Image</h3>
+            <img src="/processed/{{ clahe_image }}" alt="CLAHE Image">
+        </div>
+
+        <div class="image-container">
+            <h3>BM3D Denoised Image</h3>
+            <img src="/processed/{{ bm3d_image }}" alt="BM3D Denoised Image">
+        </div>
+
+        <div class="psnr-container">
+            <h3>PSNR Value:  {{ psnr_value }}</h3>
+        </div>
+
+        <a href="/">Upload Another Image</a>
+    </div>
+</body>
+</html>
