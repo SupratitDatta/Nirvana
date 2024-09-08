@@ -1,14 +1,19 @@
+import { useEffect } from "react";
 import { ReactComponent as WorkIcon } from "../Assets/Icons/school.svg";
 import { ReactComponent as SchoolIcon } from "../Assets/Icons/school.svg";
 import timelineElements from "../utils/timelineElements";
 import Navbar from "../Components/Navbar";
-import { VerticalTimeline, VerticalTimelineElement, } from "react-vertical-timeline-component";
+import { VerticalTimeline, VerticalTimelineElement } from "react-vertical-timeline-component";
 import "react-vertical-timeline-component/style.min.css";
 import "../css/launches.css";
 
 function Launches() {
     let workIconStyles = { background: "#06D6A0" };
     let schoolIconStyles = { background: "#f9c74f" };
+
+    useEffect(() => {
+        window.scrollTo(0, 0);
+    }, []);
 
     return (
         <div className="launch-container">
@@ -41,14 +46,20 @@ function Launches() {
                                         </h5>
                                         <p id="description">{element.description}</p>
                                         {showButton && (
-                                            <a className={`button1 ${isWorkIcon ? "workButton" : "schoolButton"}`}
-                                                href="/">
+                                            <a
+                                                className={`button1 ${isWorkIcon ? "workButton" : "schoolButton"}`}
+                                                href="/"
+                                            >
                                                 {element.buttonText}
                                             </a>
                                         )}
                                     </div>
                                     <div className="image-content">
-                                        <img src={element.imageUrl} alt={element.title} className="timeline-image" />
+                                        <img
+                                            src={element.imageUrl}
+                                            alt={element.title}
+                                            className="timeline-image"
+                                        />
                                     </div>
                                 </div>
                             </VerticalTimelineElement>

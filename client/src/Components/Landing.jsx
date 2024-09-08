@@ -18,53 +18,35 @@ function Landing() {
                             <span className="hover-letter">a</span>
                             <span className="hover-letter">n</span>
                             <span className="hover-letter">s</span>
-                            <span className="hover-letter">c</span>
-                            <span className="hover-letter">e</span>
-                            <span className="hover-letter">n</span>
-                            <span className="hover-letter">d</span>
+                            <span className="hover-letter">f</span>
+                            <span className="hover-letter">o</span>
+                            <span className="hover-letter">r</span>
+                            <span className="hover-letter">m</span>
                             <span className="hover-letter">i</span>
                             <span className="hover-letter">n</span>
                             <span className="hover-letter">g</span>
                             <span>&nbsp;</span>
-                            <span className="hover-letter">H</span>
+                            <span className="hover-letter">s</span>
+                            <span className="hover-letter">h</span>
+                            <span className="hover-letter">a</span>
+                            <span className="hover-letter">d</span>
                             <span className="hover-letter">o</span>
-                            <span className="hover-letter">r</span>
-                            <span className="hover-letter">i</span>
-                            <span className="hover-letter">z</span>
-                            <span className="hover-letter">o</span>
-                            <span className="hover-letter">n</span>
+                            <span className="hover-letter">w</span>
                             <span className="hover-letter">s</span>,
                         </div>
                         <div>
-                            <span className="hover-letter">U</span>
-                            <span className="hover-letter">n</span>
-                            <span className="hover-letter">l</span>
-                            <span className="hover-letter">o</span>
-                            <span className="hover-letter">c</span>
-                            <span className="hover-letter">k</span>
                             <span className="hover-letter">i</span>
                             <span className="hover-letter">n</span>
-                            <span className="hover-letter">g</span>
-                            <span>&nbsp;</span>
                             <span className="hover-letter">t</span>
-                            <span className="hover-letter">h</span>
-                            <span className="hover-letter">e</span>
-                            <span>&nbsp;</span>
-                            <span className="hover-letter">F</span>
-                            <span className="hover-letter">u</span>
-                            <span className="hover-letter">t</span>
-                            <span className="hover-letter">u</span>
-                            <span className="hover-letter">r</span>
-                            <span className="hover-letter">e</span>
-                            <span>&nbsp;</span>
                             <span className="hover-letter">o</span>
-                            <span className="hover-letter">f</span>
                             <span>&nbsp;</span>
-                            <span className="hover-letter">S</span>
-                            <span className="hover-letter">p</span>
-                            <span className="hover-letter">a</span>
                             <span className="hover-letter">c</span>
-                            <span className="hover-letter">e</span>
+                            <span className="hover-letter">l</span>
+                            <span className="hover-letter">a</span>
+                            <span className="hover-letter">r</span>
+                            <span className="hover-letter">i</span>
+                            <span className="hover-letter">t</span>
+                            <span className="hover-letter">y</span>
                         </div>
                     </div>
                     <div className="data2 small">

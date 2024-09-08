@@ -195,7 +195,7 @@ function Navbar() {
                     ) : (
                         <>
                             <Link to="/login">
-                                <button className="nav-button nav-login">Login</button>
+                                <button className="nav-button nav-login">Log In</button>
                             </Link>
                             <Link to="/signup">
                                 <button className="nav-button nav-signup">Sign Up</button>
