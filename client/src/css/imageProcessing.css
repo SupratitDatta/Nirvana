@@ -1,8 +1,9 @@
 @keyframes fadeInDown {
     from {
         opacity: 0;
-        transform: translateY(-2rem);
+        transform: translateY(-20px);
     }
+
     to {
         opacity: 1;
         transform: translateY(0);
@@ -11,137 +12,134 @@
 
 @keyframes glow {
     from {
-        text-shadow: 0 0 1rem rgba(100, 255, 218, 0.7);
+        text-shadow: 0 0 10px rgba(100, 255, 218, 0.7);
     }
+
     to {
-        text-shadow: 0 0 2rem rgba(100, 255, 218, 0.9), 0 0 3rem rgba(100, 255, 218, 0.7);
+        text-shadow: 0 0 20px rgba(100, 255, 218, 0.9), 0 0 30px rgba(100, 255, 218, 0.7);
     }
 }
 
-.imgprocess-container {
-    min-height: 100vh;
+.launch-container-p .launches-process {
+    min-height: 50vh;
+    margin: 0;
+    padding: 0;
     overflow-x: hidden;
-    background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+    background-color: #0c0c1d;
     color: #e0e0ff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    position: relative;
 }
 
-.imgprocess-container .title-process {
-    font-size: 4rem;
+.launch-container-p .title-process {
+    font-size: 4.5rem;
     text-align: center;
     color: #64ffda;
     padding-top: 5vh;
-    text-shadow: 0 0 1rem rgba(100, 255, 218, 0.7);
+    text-shadow: 0 0 10px rgba(100, 255, 218, 0.7);
     animation: fadeInDown 1s ease-out, glow 2s ease-in-out infinite alternate;
 }
 
-.imgprocess-container .form-container-process {
-    background: rgba(58, 80, 107, 0.5);
+.launch-container-p .form-container-process {
+    background: rgba(58, 80, 107, 0.2);
     backdrop-filter: blur(5px);
     border: 1px solid rgba(100, 255, 218, 0.1);
-    border-radius: 1rem;
-    padding: 2rem;
-    margin: 2rem auto;
-    width: 100%;
-    max-width: 800px;
-    box-shadow: 0 0.25rem 0.5rem rgba(100, 255, 218, 0.1), 0 0.4rem 1.25rem rgba(100, 255, 218, 0.05);
+    border-radius: 15px;
+    padding: 2em;
+    margin: 2em auto;
+    max-width: 600px;
+    box-shadow: 0 0.25em 0.5em 0 rgba(100, 255, 218, 0.1), 0 0.4em 1.25em 0 rgba(100, 255, 218, 0.05);
 }
 
-.imgprocess-container .form-process {
+.launch-container-p .form-process {
     display: flex;
     flex-direction: column;
-    gap: 1.5rem;
-    align-items: center;
+    gap: 1em;
+    padding-left: 60vh;
+    padding-right: 60vh;
 }
 
-.imgprocess-container .file-input-process {
-    padding: 1rem;
-    width: 100%;
+.launch-container-p .file-input-process {
+    display: block;
+    padding: 0.75em;
     border: 1px solid #64ffda;
-    border-radius: 0.8rem;
+    border-radius: 8px;
     background-color: rgba(100, 255, 218, 0.1);
     color: #e0e0ff;
-    font-size: 1rem;
-    box-sizing: border-box;
+    font-size: 1em;
 }
 
-.imgprocess-container .button1-process {
-    padding: 1rem 2rem;
-    border-radius: 2rem;
+.launch-container-p .button1-process {
+    padding: 0.75em 1.5em;
+    border-radius: 25px;
     color: #0c0c1d;
     font-weight: bold;
     text-transform: uppercase;
-    letter-spacing: 0.1rem;
+    letter-spacing: 1px;
     transition: all 0.3s ease;
-    box-shadow: 0 0.25rem 0.5rem rgba(100, 255, 218, 0.2);
+    box-shadow: 0 4px 6px rgba(100, 255, 218, 0.2);
     cursor: pointer;
     border: none;
 }
 
-.imgprocess-container .workButton-process {
+.launch-container-p .workButton-process {
     background-color: #64ffda;
 }
 
-.imgprocess-container .workButton-process:hover {
+.launch-container-p .workButton-process:hover {
     background-color: #4ad7b9;
-    transform: translateY(-0.2rem);
-    box-shadow: 0 0.6rem 0.8rem rgba(100, 255, 218, 0.4);
+    transform: translateY(-2px);
+    box-shadow: 0 6px 8px rgba(100, 255, 218, 0.4);
 }
 
-.imgprocess-container .workButton-process:disabled {
+.launch-container-p .workButton-process:disabled {
     background-color: #a0aec0;
     cursor: not-allowed;
     transform: none;
     box-shadow: none;
 }
 
-.imgprocess-container .error-message {
+.launch-container-p .error-message {
     color: #ff6b6b;
     text-align: center;
-    margin-top: 1rem;
+    margin-top: 1em;
 }
 
-.imgprocess-container .image-comparison {
+.launch-container-p .image-comparison {
     display: flex;
     flex-wrap: wrap;
-    gap: 2rem;
+    gap: 2em;
     justify-content: center;
-    margin-top: 2rem;
-    margin-bottom: 2rem;
+    /* margin-top: 2em; */
+    /* margin-bottom: 2em;  */
+    background-color: #0c0c1d;
 }
 
-.imgprocess-container .image-container-wrapper {
-    flex: 1 1 calc(50% - 1rem);
-    min-width: 20rem;
-    max-width: 37.5rem;
+.launch-container-p .image-container-wrapper {
+    flex: 1 1 calc(50% - 1em);
+    min-width: 300px;
+    max-width: 600px;
+    background-color: #2b2b73;
 }
 
-.imgprocess-container .image-title-process {
+.launch-container-p .image-title-process {
     font-size: 1.5rem;
     font-weight: 500;
     color: #64ffda;
-    margin-bottom: 1rem;
+    margin-bottom: 1em;
+    text-align: center;
+}
+
+.launch-container-p .psnr-value {
+    color: #64ffda;
     text-align: center;
 }
 
 @media only screen and (max-width: 768px) {
-    .imgprocess-container .form-container-process {
-        width: 80%;
-    }
-
-    .imgprocess-container .image-comparison {
+    .launch-container-p .image-comparison {
         flex-direction: column;
-        gap: 1.5rem;
     }
 
-    .imgprocess-container .image-container-wrapper {
+    .launch-container-p .image-container-wrapper {
         flex: 1 1 100%;
-    }
-
-    .imgprocess-container .title-process {
-        font-size: 3rem;
     }
 }

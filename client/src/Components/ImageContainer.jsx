@@ -11,7 +11,7 @@ const ImageContainer = ({ imageSrc }) => {
     const handleWheel = (e) => {
         e.preventDefault();
         const delta = e.deltaY * -0.01;
-        const newScale = Math.min(Math.max(scale + delta, 0.5), 20);
+        const newScale = Math.min(Math.max(scale + delta, 0.5), 100);
 
         if (containerRef.current) {
             const container = containerRef.current;
